@@ -33,9 +33,13 @@
   <body>
     <div id="message">
       <h2>Welcome</h2>
-      <h1>Signlang.org is coming soon</h1>
+      <p>This is a new approach to build a data set for American Sign Language.</p>
+      <p>We have created a prototype game app that collects three main linguistic aspects of the language: facial expressions, gestures, and signs. ASL is a highly nuanced language and it is our intention to capture as many aspects of the language that we can.</p> 
+      <p>Our hope is that with our successes in data collection, others can continue to contribute to our database or use our data set for future apps or future projects for Deaf and Hard of Hearing people.</p> 
+      <p>In this initial stage, our focus is on ASL; other sign languages such as British, Australian, Korean, and Spanish will be added in the future. Our target audience would be ASL users, interpreters, and advanced ASL students.</p>
+      <h3>- Deaf Communication Track at MediaLab Signal Noise Berlin <b>#mlberlin</b></h3>
+
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
 
     <script>
       document.addEventListener('DOMContentLoaded', function() {
@@ -58,6 +62,20 @@
           document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
         }
       });
+    </script>
+
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDlPxwKMYOtYEt18RuBMN_kgRWIscpyG1A",
+        authDomain: "signlang-e1e8c.firebaseapp.com",
+        databaseURL: "https://signlang-e1e8c.firebaseio.com",
+        projectId: "signlang-e1e8c",
+        storageBucket: "signlang-e1e8c.appspot.com",
+        messagingSenderId: "444805639426"
+      };
+      firebase.initializeApp(config);
     </script>
   </body>
 </html>
